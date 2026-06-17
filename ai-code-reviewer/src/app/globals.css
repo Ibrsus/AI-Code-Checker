@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-inter: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0d0d0f;
+  color: #e8e8f0;
+  font-family: var(--font-inter);
+  margin: 0;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: #16161a; }
+::-webkit-scrollbar-thumb { background: #2a2a30; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #3a3a45; }
+
+/* Review markdown output */
+.review-output h2 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #7c6af7;
+  margin: 1.5rem 0 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-family: var(--font-inter);
+}
+
+.review-output h2:first-child {
+  margin-top: 0;
+}
+
+.review-output p {
+  margin: 0.4rem 0;
+  line-height: 1.7;
+  color: #c8c8d8;
+}
+
+.review-output ul, .review-output ol {
+  padding-left: 1.25rem;
+  margin: 0.4rem 0;
+}
+
+.review-output li {
+  margin: 0.3rem 0;
+  line-height: 1.6;
+  color: #c8c8d8;
+}
+
+.review-output strong {
+  color: #e8e8f0;
+  font-weight: 600;
+}
+
+.review-output code {
+  font-family: var(--font-mono);
+  background: #1e1e26;
+  border: 1px solid #2a2a30;
+  border-radius: 4px;
+  padding: 0.1em 0.4em;
+  font-size: 0.85em;
+  color: #a8d8a8;
+}
+
+.review-output pre {
+  background: #1e1e26;
+  border: 1px solid #2a2a30;
+  border-radius: 8px;
+  padding: 1rem;
+  overflow-x: auto;
+  margin: 0.75rem 0;
+}
+
+.review-output pre code {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 0.875rem;
+}
+
+/* Drag-over highlight */
+.drag-over {
+  border-color: #7c6af7 !important;
+  background-color: #1a1830 !important;
+}
+
+/* Spinner */
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+.spinner {
+  animation: spin 0.8s linear infinite;
+}
+
+/* Fade in */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.fade-in {
+  animation: fadeIn 0.3s ease-out forwards;
+}
