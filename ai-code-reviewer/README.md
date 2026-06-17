@@ -16,7 +16,7 @@ Paste or upload code and get an instant structured AI review — powered by Open
 ## Quick start
 
 ```bash
-git clone https://github.com/your-username/ai-code-reviewer
+git clone https://github.com/Ibrsus/ai-code-reviewer
 cd ai-code-reviewer
 npm install
 cp .env.local.example .env.local
@@ -57,7 +57,7 @@ npm run dev
 
 ## Deploy to Vercel
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/your-username/ai-code-reviewer&env=AI_PROVIDER,OPENROUTER_API_KEY)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Ibrsus/ai-code-reviewer&env=AI_PROVIDER,OPENROUTER_API_KEY)
 
 Set `AI_PROVIDER=openrouter` and your `OPENROUTER_API_KEY` in the Vercel dashboard env vars.
 
