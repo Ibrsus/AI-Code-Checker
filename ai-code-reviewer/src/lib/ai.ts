@@ -47,7 +47,7 @@ function getClient(): { client: InstanceType<typeof OpenAI>; provider: Provider 
       baseURL: "https://openrouter.ai/api/v1",
       apiKey: process.env.OPENROUTER_API_KEY ?? "",
       defaultHeaders: {
-        "HTTP-Referer": "https://github.com/your-username/ai-code-reviewer",
+        "HTTP-Referer": "https://github.com/IBRSUS/ai-code-reviewer",
         "X-Title": "AI Code Reviewer",
       },
     }),
